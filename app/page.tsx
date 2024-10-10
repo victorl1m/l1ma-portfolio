@@ -1,6 +1,4 @@
-import Image from "next/image";
 import Navbar from "./components/Navbar/Navbar";
-import Video from "next-video";
 import { CirclePlayIcon } from "lucide-react";
 import ButtonHref from "./components/ButtonHref/ButtonHref";
 import Project001 from "./components/Project001/Project001";
@@ -10,7 +8,6 @@ export default function Home() {
   return (
     <>
       <LoaderPage />
-      {/* First section with video and Navbar */}
       <section className="relative w-full h-screen">
         <Project001 />
         <div className="absolute inset-0 z-20 flex flex-col px-6 sm:px-16 py-8">
@@ -39,7 +36,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* Contêiner com altura fixa e rolagem interna */}
             <div
               className="flex flex-col items-end backdrop-filter backdrop-blur-xl p-4"
               style={{ height: "200px", overflowY: "auto" }}
@@ -47,8 +43,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* New section (second section) */}
       <section className="w-full h-screen bg-gray-800">
         <div className="flex justify-center items-center h-full">
           <h2 className="text-white text-3xl">This is the second section</h2>

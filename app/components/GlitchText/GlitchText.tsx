@@ -15,7 +15,7 @@ const GlitchText: React.FC<GlitchTextProps> = ({ text }) => {
   const generateGlitchText = () => {
     return text
       .split("")
-      .map((char, index) => {
+      .map((char) => {
         // Substitui aleatoriamente 20% dos caracteres por caracteres aleatórios
         if (Math.random() < 0.2) {
           return getRandomCharacter();
