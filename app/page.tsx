@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import Navbar from "./components/Navbar/Navbar";
 import { CirclePlayIcon } from "lucide-react";
 import ButtonHref from "./components/ButtonHref/ButtonHref";
@@ -7,6 +8,7 @@ import LoaderPage from "./components/LoaderPage/LoaderPage";
 export default function Home() {
   return (
     <>
+      <Analytics />
       <LoaderPage />
       <section className="relative w-full h-screen">
         <Project001 />
