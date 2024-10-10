@@ -19,7 +19,7 @@ export default function Home() {
               </h1>
               <div className="flex flex-col">
                 <span className="text-[3rem] sm:text-[5.2rem] mono tracking-tighter">
-                  let's know
+                  let&#39;s know
                 </span>
                 <span className="font-bold text-[6rem] sm:text-[10rem] sm:mt-[-4rem] mt-[-2rem] tracking-tighter">
                   Lucy?
