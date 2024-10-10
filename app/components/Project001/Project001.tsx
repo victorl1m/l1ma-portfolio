@@ -2,9 +2,11 @@
 import { useRef, useEffect } from "react";
 
 export default function Project001() {
+  /* eslint-disable @typescript-eslint/no-require-imports */
+  const video = require("../../assets/video/video.mp4");
+  /* eslint-enable @typescript-eslint/no-require-imports */
   type VideoRef = HTMLVideoElement | null;
   const videoRef = useRef(null) as React.MutableRefObject<VideoRef>;
-  const videoDir = "../../assets/video/video.mp4";
 
   useEffect(() => {
     if (videoRef.current) {
@@ -19,7 +21,7 @@ export default function Project001() {
       autoPlay
       muted
       loop
-      src={videoDir}
+      src={video}
     />
   );
 }

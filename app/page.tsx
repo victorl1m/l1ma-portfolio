@@ -15,7 +15,7 @@ export default function Home() {
           <div className="flex flex-col max-sm:mt-52 sm:flex-row justify-between items-center h-full select-none">
             <div className="flex flex-col items-start gap-2">
               <h1 className="text-white text-xl sm:text-4xl mono tracking-tighter">
-                <b>//</b> project <b>001</b>
+                <b>{"//"}</b> project <b>001</b>
               </h1>
               <div className="flex flex-col">
                 <span className="text-[3rem] sm:text-[5.2rem] mono tracking-tighter">
