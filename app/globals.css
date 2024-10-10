@@ -14,6 +14,11 @@
   }
 }
 
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/assets/fonts/GeistMonoVF.woff");
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -24,4 +29,39 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+}
+
+
+body {
+  --sb-track-color: black;
+  --sb-thumb-color: #2c9a11;
+  --sb-size: 4px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+
+.mono {
+  font-family: "Geist Mono", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
