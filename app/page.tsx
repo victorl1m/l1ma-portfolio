@@ -1,6 +1,6 @@
 import { Analytics } from "@vercel/analytics/react";
 import Navbar from "./components/Navbar/Navbar";
-import { CirclePlayIcon } from "lucide-react";
+import { AtomIcon, CircleIcon, CirclePlayIcon, GithubIcon } from "lucide-react";
 import ButtonHref from "./components/ButtonHref/ButtonHref";
 import Project001 from "./components/Project001/Project001";
 import LoaderPage from "./components/LoaderPage/LoaderPage";
@@ -38,16 +38,22 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div
-              className="flex flex-col items-end backdrop-filter backdrop-blur-xl p-4"
-              style={{ height: "200px", overflowY: "auto" }}
-            ></div>
           </div>
         </div>
       </section>
-      <section className="w-full h-screen bg-gray-800">
-        <div className="flex justify-center items-center h-full">
-          <h2 className="text-white text-3xl">This is the second section</h2>
+      <section className="w-full h-fit bg-black p-4 sm:pl-16 pl-4 border-t border-neutral-700">
+        <div className="flex max-sm:justify-between items-center h-full gap-4">
+          <div className="flex flex-row gap-4 items-center">
+            <AtomIcon size={24} />
+            <span className="mono">@ 2024</span>
+          </div>
+          <div className="flex flex-row items-center gap-2">
+            <span className="relative flex">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#2C911A] opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
+            </span>
+            <p className="font-mono">All systems operational</p>
+          </div>
         </div>
       </section>
     </>
