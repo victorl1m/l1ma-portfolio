@@ -1,6 +1,6 @@
 import { Analytics } from "@vercel/analytics/react";
 import Navbar from "./components/Navbar/Navbar";
-import { AtomIcon, CircleIcon, CirclePlayIcon, GithubIcon } from "lucide-react";
+import { AtomIcon, CirclePlayIcon } from "lucide-react";
 import ButtonHref from "./components/ButtonHref/ButtonHref";
 import Project001 from "./components/Project001/Project001";
 import LoaderPage from "./components/LoaderPage/LoaderPage";
