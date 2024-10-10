@@ -4,6 +4,7 @@ import { useRef, useEffect } from "react";
 export default function Project001() {
   type VideoRef = HTMLVideoElement | null;
   const videoRef = useRef(null) as React.MutableRefObject<VideoRef>;
+  const videoDir = "../../assets/video/video.mp4";
 
   useEffect(() => {
     if (videoRef.current) {
@@ -18,7 +19,7 @@ export default function Project001() {
       autoPlay
       muted
       loop
-      src={require("../../assets/video/video.mp4")}
+      src={videoDir}
     />
   );
 }
