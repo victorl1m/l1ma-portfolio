@@ -2,7 +2,8 @@
 import { useRef, useEffect } from "react";
 
 export default function Project001() {
-  const videoRef = useRef(null) as any;
+  type VideoRef = HTMLVideoElement | null;
+  const videoRef = useRef(null) as React.MutableRefObject<VideoRef>;
 
   useEffect(() => {
     if (videoRef.current) {
